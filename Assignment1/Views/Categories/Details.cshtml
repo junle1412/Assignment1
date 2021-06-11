@@ -1,0 +1,21 @@
+﻿@model Assignment1.Models.Category
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details of CategoriesController</h2>
+<div class="form-group">
+    @Html.ActionLink("Back to Categories",
+    "Index",
+    "Categories",
+    null,
+    new { @class = "btn btn-primary" }
+    )
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Category Description: @Model.Description</div>
+    <div class="panel-body">
+        <p>Name: @Model.Name</p>
+    </div>
+</div>
